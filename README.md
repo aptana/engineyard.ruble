@@ -9,7 +9,7 @@ A bundle to enable related commands in Aptana Studio. Ported from http://github.
 
 ## License
 
-Forthcoming
+Licensed under the MIT license.
 
 ## Bugs/Requests
 
