@@ -3,7 +3,7 @@ require 'ruble.rb'
 bundle 'Engine Yard' do |bundle|
   bundle.authoer = 'Allen Yeung'
   bundle.copyright = <<END
-¬© Copyright 2010 Aptana Inc. Distributed under the MIT license.
+Copyright 2010 Aptana Inc. Distributed under the MIT license.
 END
 
   bundle.description = <<END

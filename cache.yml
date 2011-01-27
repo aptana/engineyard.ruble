@@ -142,7 +142,7 @@ children:
   displayName: Download Recipes, inputPath: null, keyBindingMap: null, outputPath: null,
   outputType: discard, path: commands/recipes.rb, runType: current_thread, scope: 'source.ruby,
     project.rails', workingDirectoryType: CURRENT_PROJECT}
-copyright: '¬© Copyright 2010 Aptana Inc. Distributed under the MIT license.
+copyright: 'Copyright 2010 Aptana Inc. Distributed under the MIT license.
 
   '
 customProperties: {authoer: Allen Yeung}
