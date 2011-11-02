@@ -29,7 +29,7 @@ END
     menu.menu "Recipes" do |recipe|
       recipe.command "Apply Recipes"
       recipe.command "Upload Recipes"
-      recipe.command "Download Recipe"
+      #recipe.command "Download Recipe"
     end
     menu.menu "Maintenance" do |web|
       web.command "Turn Maintenance On"
