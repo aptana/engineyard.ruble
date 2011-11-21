@@ -6,6 +6,7 @@ bundle 'Engine Yard' do |bundle|
 Copyright 2010 Aptana Inc. Distributed under the MIT license.
 END
 
+  bundle.repository = "git://github.com/aptana/engineyard.ruble.git"
   bundle.description = <<END
 Easy deployment with Engine Yard from within Studio 3
 END

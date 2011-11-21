@@ -252,5 +252,5 @@ increaseIndentMarkers: {}
 license: null
 licenseUrl: null
 path: bundle.rb
-repository: null
+repository: git://github.com/aptana/engineyard.ruble.git
 visible: true
