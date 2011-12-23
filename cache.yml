@@ -1,149 +1,6 @@
 !!com.aptana.scripting.model.BundleElement
 author: null
 children:
-- !command
-  async: false
-  customProperties: null
-  displayName: Deploy App
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: commands/deployment.rb
-  runType: current_thread
-  scope: source.ruby, project.rails
-  workingDirectoryType: CURRENT_PROJECT
-- !command
-  async: false
-  customProperties: null
-  displayName: Open SSH Session
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: commands/deployment.rb
-  runType: current_thread
-  scope: source.ruby, project.rails
-  workingDirectoryType: CURRENT_PROJECT
-- !command
-  async: false
-  customProperties: null
-  displayName: List Environments
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: commands/deployment.rb
-  runType: current_thread
-  scope: source.ruby, project.rails
-  workingDirectoryType: CURRENT_PROJECT
-- !command
-  async: false
-  customProperties: null
-  displayName: Retrieve Logs
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: commands/deployment.rb
-  runType: current_thread
-  scope: source.ruby, project.rails
-  workingDirectoryType: CURRENT_PROJECT
-- !command
-  async: false
-  customProperties: null
-  displayName: Rebuild Environment
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: commands/deployment.rb
-  runType: current_thread
-  scope: source.ruby, project.rails
-  workingDirectoryType: CURRENT_PROJECT
-- !command
-  async: false
-  customProperties: null
-  displayName: Rollback App
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: commands/deployment.rb
-  runType: current_thread
-  scope: source.ruby, project.rails
-  workingDirectoryType: CURRENT_PROJECT
-- !command
-  async: false
-  customProperties: null
-  displayName: Turn Maintenance On
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: commands/maintenance.rb
-  runType: current_thread
-  scope: source.ruby, project.rails
-  workingDirectoryType: CURRENT_PROJECT
-- !command
-  async: false
-  customProperties: null
-  displayName: Turn Maintenance Off
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: commands/maintenance.rb
-  runType: current_thread
-  scope: source.ruby, project.rails
-  workingDirectoryType: CURRENT_PROJECT
-- !command
-  async: false
-  customProperties: null
-  displayName: Apply Recipes
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: commands/recipes.rb
-  runType: current_thread
-  scope: source.ruby, project.rails
-  workingDirectoryType: CURRENT_PROJECT
-- !command
-  async: false
-  customProperties: null
-  displayName: Upload Recipes
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: commands/recipes.rb
-  runType: current_thread
-  scope: source.ruby, project.rails
-  workingDirectoryType: CURRENT_PROJECT
-- !command
-  async: false
-  customProperties: null
-  displayName: Download Recipes
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: commands/recipes.rb
-  runType: current_thread
-  scope: source.ruby, project.rails
-  workingDirectoryType: CURRENT_PROJECT
 - !!com.aptana.scripting.model.MenuElement
   children:
   - children: &id001 []
@@ -235,20 +92,163 @@ children:
   displayName: Engine Yard
   path: bundle.rb
   scope: source.ruby, project.rails
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Deploy App
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: commands/deployment.rb
+  runType: current_thread
+  scope: source.ruby, project.rails
+  workingDirectoryType: CURRENT_PROJECT
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Open SSH Session
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: commands/deployment.rb
+  runType: current_thread
+  scope: source.ruby, project.rails
+  workingDirectoryType: CURRENT_PROJECT
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: List Environments
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: commands/deployment.rb
+  runType: current_thread
+  scope: source.ruby, project.rails
+  workingDirectoryType: CURRENT_PROJECT
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Retrieve Logs
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: commands/deployment.rb
+  runType: current_thread
+  scope: source.ruby, project.rails
+  workingDirectoryType: CURRENT_PROJECT
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Rebuild Environment
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: commands/deployment.rb
+  runType: current_thread
+  scope: source.ruby, project.rails
+  workingDirectoryType: CURRENT_PROJECT
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Rollback App
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: commands/deployment.rb
+  runType: current_thread
+  scope: source.ruby, project.rails
+  workingDirectoryType: CURRENT_PROJECT
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Turn Maintenance On
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: commands/maintenance.rb
+  runType: current_thread
+  scope: source.ruby, project.rails
+  workingDirectoryType: CURRENT_PROJECT
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Turn Maintenance Off
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: commands/maintenance.rb
+  runType: current_thread
+  scope: source.ruby, project.rails
+  workingDirectoryType: CURRENT_PROJECT
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Apply Recipes
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: commands/recipes.rb
+  runType: current_thread
+  scope: source.ruby, project.rails
+  workingDirectoryType: CURRENT_PROJECT
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Upload Recipes
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: commands/recipes.rb
+  runType: current_thread
+  scope: source.ruby, project.rails
+  workingDirectoryType: CURRENT_PROJECT
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Download Recipes
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: commands/recipes.rb
+  runType: current_thread
+  scope: source.ruby, project.rails
+  workingDirectoryType: CURRENT_PROJECT
 copyright: 'Copyright 2010 Aptana Inc. Distributed under the MIT license.
 
   '
 customProperties: {authoer: Allen Yeung}
-decreaseIndentMarkers: {}
+decreaseIndentMarkers: &id002 {}
 description: 'Easy deployment with Engine Yard from within Studio 3
 
   '
 displayName: Engine Yard
-fileTypeRegistry: {}
-fileTypes: []
-foldingStartMarkers: {}
-foldingStopMarkers: {}
-increaseIndentMarkers: {}
+fileTypeRegistry: *id002
+fileTypes: *id001
+foldingStartMarkers: *id002
+foldingStopMarkers: *id002
+increaseIndentMarkers: *id002
 license: null
 licenseUrl: null
 path: bundle.rb
