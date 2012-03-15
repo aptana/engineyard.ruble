@@ -1,29 +1,17 @@
 require 'engine_yard_tools'
 
+with_defaults :scope => ['source.ruby', 'project.rails'], :output => :discard, :working_directory => :current_project do
 
-command "Apply Recipes" do |cmd|
-  cmd.scope = ['source.ruby', 'project.rails']
-  cmd.output = :discard
-  cmd.working_directory = :current_project
-  cmd.invoke do
-    EYCommand.run("recipes apply")
+  command t(:apply_recipes) do |cmd|
+    cmd.invoke { EYCommand.run("recipes apply") }
   end
-end
 
-command "Upload Recipes" do |cmd|
-  cmd.scope = ['source.ruby', 'project.rails']
-  cmd.output = :discard
-  cmd.working_directory = :current_project
-  cmd.invoke do
-    EYCommand.run("recipes upload")
+  command t(:upload_recipes) do |cmd|
+    cmd.invoke { EYCommand.run("recipes upload") }
   end
-end
 
-command "Download Recipes" do |cmd|
-  cmd.scope = ['source.ruby', 'project.rails']
-  cmd.output = :discard
-  cmd.working_directory = :current_project
-  cmd.invoke do
-    EYCommand.run("recipes download")
+  command t(:download_recipes) do |cmd|
+    cmd.invoke { EYCommand.run("recipes download") }
   end
+
 end
