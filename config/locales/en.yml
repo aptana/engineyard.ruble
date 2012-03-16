@@ -1,0 +1,17 @@
+en:
+  bundle_name: 'Engine Yard'
+  deploy_app: "Deploy App"
+  open_ssh_session: "Open SSH Session"
+  deployment: "Deployment"
+  list_environments: "List Environments"
+  retrieve_logs: "Retrieve Logs"
+  rebuild_environment: "Rebuild Environment"
+  rollback_app: "Rollback App"
+  recipes: "Recipes"
+  apply_recipes: "Apply Recipes"
+  upload_recipes: "Upload Recipes"
+  download_recipes: "Download Recipes"
+  maintenance: "Maintenance"
+  turn_maintenance_on: "Turn Maintenance On"
+  turn_maintenance_off: "Turn Maintenance Off"
+  

@@ -1,57 +1,27 @@
 require 'engine_yard_tools'
 
-
-command "Deploy App" do |cmd|
-  cmd.scope = ['source.ruby', 'project.rails']
-  cmd.output = :discard
-  cmd.working_directory = :current_project
-  cmd.invoke do
-    EYCommand.run("deploy")
+with_defaults :scope => ['source.ruby', 'project.rails'], :output => :discard, :working_directory => :current_project do
+  command t(:deploy_app) do |cmd|
+    cmd.invoke { EYCommand.run("deploy") }
   end
-end
 
-
-command "Open SSH Session" do |cmd|
-  cmd.scope = ['source.ruby', 'project.rails']
-  cmd.output = :discard
-  cmd.working_directory = :current_project
-  cmd.invoke do
-    EYCommand.run("ssh")
+  command t(:open_ssh_session) do |cmd|
+    cmd.invoke { EYCommand.run("ssh") }
   end
-end
 
-command "List Environments" do |cmd|
-  cmd.scope = ['source.ruby', 'project.rails']
-  cmd.output = :discard
-  cmd.working_directory = :current_project
-  cmd.invoke do
-    EYCommand.run("environments")
+  command t(:list_environments) do |cmd|
+    cmd.invoke { EYCommand.run("environments") }
   end
-end
 
-command "Retrieve Logs" do |cmd|
-  cmd.scope = ['source.ruby', 'project.rails']
-  cmd.output = :discard
-  cmd.working_directory = :current_project
-  cmd.invoke do
-    EYCommand.run("logs")
+  command t(:retrieve_logs) do |cmd|
+    cmd.invoke { EYCommand.run("logs") }
   end
-end
 
-command "Rebuild Environment" do |cmd|
-  cmd.scope = ['source.ruby', 'project.rails']
-  cmd.output = :discard
-  cmd.working_directory = :current_project
-  cmd.invoke do
-    EYCommand.run("rebuild")
+  command t(:rebuild_environment) do |cmd|
+    cmd.invoke { EYCommand.run("rebuild") }
   end
-end
 
-command "Rollback App" do |cmd|
-  cmd.scope = ['source.ruby', 'project.rails']
-  cmd.output = :discard
-  cmd.working_directory = :current_project
-  cmd.invoke do
-    EYCommand.run("rollback")
+  command t(:rollback_app) do |cmd|
+    cmd.invoke { EYCommand.run("rollback") }
   end
 end

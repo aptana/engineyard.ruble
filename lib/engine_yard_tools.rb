@@ -1,16 +1,10 @@
 require 'ruble'
 require 'ruble/ui'
 require 'ruble/terminal'
-require 'rbconfig'
 
 module EYCommand
-  
-  def self.is_windows?
-    RbConfig::CONFIG['target_os'] =~ /(win|w)32$/
-  end
-  
   def self.is_gem_installed?(gem)
-    if is_windows?
+    if Ruble.is_windows?
       `gem search #{gem}` =~ /#{Regexp.escape(gem)}/
     else
       `/bin/sh -l -c "gem search #{gem}"`=~ /#{Regexp.escape(gem)}/
